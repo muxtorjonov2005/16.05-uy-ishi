@@ -1,0 +1,63 @@
+.hero{
+    background-image: url('../images/saww.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100;
+    
+    .hero__container{
+        padding-top: 201px;
+        padding-bottom: 60px;
+
+    }
+    
+    .hero__info{
+        font-family: 'Oswald';
+        text-transform: uppercase;
+        width: 390px;
+        margin-bottom: 71px;
+        h3{
+            font-size: 45px;
+            font-weight: 500;
+            color: #363739;
+            span{
+                color: #3EA83B;
+            }
+        }
+        h1{
+            font-weight: 700;
+            font-size: 122px;
+            color: #3EA83B;
+            margin-bottom: 4px;
+        }
+        p{
+            font-size: 23px;            
+            color: #8C8C8C;
+            margin-bottom: 50px;
+        }
+        a{
+            @extend %buttonTeplate;
+            text-decoration: none;
+        }
+        
+    }
+
+    .hero__pages{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        span{
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color:white;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover{
+                background-color: #2AE85F;
+            }
+        }
+    }
+}

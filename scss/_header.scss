@@ -1,0 +1,42 @@
+$transition: all 0.5s ease-out;
+.header{
+    padding: 26px;
+    font-family: 'Poppins';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+
+    .header__container{
+        display: flex;
+        align-items: center;
+        gap: 315px;
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            transition: $transition;
+            
+            &:hover{
+                color: #3EA83B;
+            }
+        }
+
+        li{
+            &:last-child a{
+                @extend %buttonTeplate
+            }
+        }
+
+    }
+}
+

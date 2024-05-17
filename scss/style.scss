@@ -1,0 +1,34 @@
+@import './normalize';
+@import './font';
+@import './header';
+@import './hero';
+@import './about';
+@import './feature';
+@import './mission';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+}
+
+%buttonTeplate{
+    padding: 15px 52px;
+    border: none;
+    border-radius: 43px;
+    background-color: #3EA83B;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+
+    &:hover{
+        background-color:#176415
+    }
+}

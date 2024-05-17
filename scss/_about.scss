@@ -1,0 +1,108 @@
+.product{
+    padding-top: 135px;
+    padding-bottom: 127px;
+
+    .product__top{
+        display: flex;
+        gap: 45px;
+    }
+    .product__video{
+        position: relative;
+        width: 643px;
+        height: 497px;
+        .product__background{
+            width: 354px;
+            height: 456px;
+            background-color: #2AE85F;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            z-index: -1;
+        }
+
+        .play-block{
+            position: absolute;
+            top: 32%;
+            left: 35%;
+            display: inline-block;
+            width: 139px;
+            height: 139px;
+            border-radius: 50%;            
+            border: 2px solid #FFFFFF26; 
+            padding: 12px;
+            
+            cursor: pointer;        
+            span{               
+                width: 115px;
+                height: 115px;
+                border-radius: 50%;
+                background-color:white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+    }
+
+    .product__info{
+        h4{
+            font-family: 'Poppins';
+            font-size: 19px;
+            font-weight: 700;
+            color: #3EA83B;
+            margin-bottom: 24px;
+        }
+    
+    
+        h3{
+            font-family: 'Poppins';
+            font-size: 46px;
+            font-weight: 700;
+            color: #363739;
+            margin-bottom: 38px;
+        }
+    
+        p{
+            font-family: 'Lato';
+            width: 488px;
+            line-height: 23px;
+            color: #363739;
+            margin-bottom: 50px;
+        }
+    
+        a{
+            @extend %buttonTeplate;
+            text-decoration: none;
+        }
+    }
+
+    .product__bottom{
+        margin-top: 102px;
+        display: flex;
+        gap: 86px;
+    }
+
+    .product__block{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        h3{
+            width: 277px;
+            font-family: 'Poppins';
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 28px;
+            color: #363739;
+            margin-bottom: 17px;
+        }
+
+        p{
+            width: 351px;
+            font-family: 'Lato';
+            line-height: 23px;
+            color: #363739;
+        }
+    }
+}
